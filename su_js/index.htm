@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="outer">
+    <div id="inner">
+      <div class="divclass blue" id="divtest1"></div>
+      <div class="divclass orange"></div>
+      <div class="divclass blue" id="divtest3"></div>
+      <div id="inner2">
+        <button class="button" id="b1" onclick="hideBlue()">Hide blue</button>
+        <button class="button" id="b2" onclick="hideOrange()">Hide orange</button>
+        <button class="button" onclick="showAll()">Show all</button>
+      </div>
+    </div>
+  </div>
+<script>
+function hideBlue() {
+  var x = document.getElementById("inner");
+  var y = x.getElementsByClassName("blue");
+  var i;
+  var text = document.getElementById("b1");
+  for (i = 0; i < y.length; i++) {
+    if (y[i].style.display === "none") {
+        y[i].style.display = "block";
+        text.innerHTML = "Hide blue";
+    } else {
+        y[i].style.display = "none";
+        text.innerHTML = "Show blue";
+    }
+  }  
+}
+function hideOrange() {
+  var x = document.getElementById("inner");
+  var y = x.getElementsByClassName("orange");
+  var i;
+  var text = document.getElementById("b2");
+  for (i = 0; i < y.length; i++) {
+    if (y[i].style.display === "none") {
+        y[i].style.display = "block";
+        text.innerHTML = "Hide orange";
+    } else {
+        y[i].style.display = "none";
+        text.innerHTML = "Show orange";
+    }
+  }  
+}
+function showAll() {
+  var x = document.getElementById("inner");
+  var y = x.getElementsByClassName("divclass");
+  var i;
+  var b1 = document.getElementById("b1");
+  var b2 = document.getElementById("b2");
+  for (i = 0; i < y.length; i++) {
+      y[i].style.display = "block";
+      b1.innerHTML = "Hide blue";
+      b2.innerHTML = "Hide orange";
+  }  
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>56</title>
+  </head>
+  <body>
+    <form action="/testforma" method="post">
+      <!-- <form> -->
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="TEST" required /><br />
+
+      <label for="lname">Last name:</label><br />
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        placeholder="asdas"
+        required
+      /><br />
+
+      <label for="password">password:</label><br />
+      <input type="password" id="password" name="password" /><br />
+
+      <label for="search">search:</label><br />
+      <input type="search" id="search" name="search" disabled /><br />
+
+      <label for="url">url:</label><br />
+      <input type="url" id="url" name="url" /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br />
+
+      <label for="emails">Emails:</label><br />
+      <input type="emails" id="emails" name="emails" multiple /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea
+        id="message"
+        name="message"
+        style="resize: none"
+        cols="10"
+        rows="10"
+        placeholder="Placeholder"
+      >
+labai ilgas tekstas</textarea
+      ><br />
+
+      <label for="message-resizable">message-resizable:</label><br />
+      <textarea id="message-resizable" name="message-resizable"></textarea
+      ><br />
+
+      <select id="select" name="select">
+        <optgroup label="Skaiciai">
+          <option>1</option>
+          <option>9</option>
+        </optgroup>
+        <optgroup label="raides">
+          <option>A</option>
+          <option selected>Z</option>
+        </optgroup></select
+      ><br />
+
+      <label for="suggestion">suggestions:</label><br>
+      <input
+        id="suggestion"
+        name="suggestion"
+        list="suggestions"
+      />
+      <datalist id="suggestions">
+            <option value="Vienas">
+            <option value="Du">
+            <option value="Trys">
+      </datalist><br>
+
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+
+      <div>
+        <input type="radio" id="huey" name="drone" value="huey" />
+        <label for="huey">Huey</label>
+      </div>
+
+      <div>
+        <input type="radio" id="dewey" name="drone" value="dewey" />
+        <label for="dewey">Dewey</label>
+      </div>
+
+      <div>
+        <input type="radio" id="louie" name="drone" value="louie" />
+        <label for="louie">Louie</label>
+      </div>
+
+      <div>
+        <input type="range" id="volume" name="volume" min="0" max="11" />
+        <label for="volume">Volume</label>
+      </div>
+
+      <label for="meeting-time">Choose a time for your appointment:</label>
+
+      <input
+        type="datetime-local"
+        id="meeting-time"
+        name="meeting-time"
+        min="2018-06-07T00:00"
+        max="2018-06-14T00:00"
+      /><br />
+
+      <label for="color">Color:</label><br />
+      <input type="color" id="color" name="color" /><br />
+
+      <label for="file">File:</label><br />
+      <input
+        type="file"
+        id="file"
+        name="file"
+        accept="image/*"
+        multiple
+        autofocus
+      /><br />
+
+      <progress value="50" max="100"></progress>
+
+      <progress></progress>
+
+      <div class="button">
+        <button type="submit">SIUSTI</button>
+      </div>
+
+    </form>
+  </body>
+</html>

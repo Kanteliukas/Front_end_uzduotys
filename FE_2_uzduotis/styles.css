@@ -1,0 +1,24 @@
+p {
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#overwrite {
+    color: turquoise;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.blue {
+    text-align: center;
+    background-color: blue;
+}
+
+#orange {
+    text-align: end;
+    background-color: orange;
+}
+
+.awesome-background {
+    background-color: pink;
+}

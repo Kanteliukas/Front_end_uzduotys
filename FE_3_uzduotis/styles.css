@@ -1,0 +1,58 @@
+p {
+    background-color: white;
+    color: brown;
+    font-style: normal;
+    text-align: start;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+#overwrite {
+    color: turquoise;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-family: sans-serif;
+    font-weight: lighter;
+    border-style: none none dotted none;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.blue {
+    text-align: center;
+    background-color: blue;
+    padding: 5px;
+    border-style: none none solid none;
+    border-radius: 3px;
+    border-width: 500x;
+    margin: 10px 275px;
+}
+
+#orange {
+    text-align: end;
+    font-family: fantasy;
+    font-size: medium;
+    background-color: orange;
+    padding: 5px 2px;
+    border-style: solid;
+    border-color: lime;
+    border-radius: 3px;
+    border-width: 1px;
+    margin: 10px 10px 10px 650px;
+}
+
+.awesome-background {
+    background-color: black;
+}
+
+.awesome-block {
+    background-color: rgb(1, 69, 78);
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: red;
+}

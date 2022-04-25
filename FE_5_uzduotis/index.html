@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="payment-form center">
+        <form>
+            <h1 class="font-style">Payment form</h1>
+            <p class="font-style">Required fields are followed by <abbr title="This field is required">*</abbr></p>
+            <div>
+                <h2 class="font-style">Contact information</h2>
+                <table class="align-right">
+                    <tr>
+                        <td></td>
+                        <td>
+                            <fieldset>
+                                <legend>Title</legend>
+                                <table>
+                                    <tr>
+                                        <td><input type="radio" id="gender" name="gender"></td>
+                                        <td class="align-left">Mister</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="radio" id="gender" name="gender"></td>
+                                        <td class="align-left">Miss</td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="font-style" for="full-name">Name:<abbr
+                                    title="This field is required">*</abbr></label></td>
+                        <td><input type="text" id="full-name" name="full-name"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="font-style" for="email">E-mail:<abbr
+                                    title="This field is required">*</abbr></label></td>
+                        <td><input type="email" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="font-style" for="password">Password:<abbr
+                                    title="This field is required">*</abbr></label></td>
+                        <td><input type="password" id="password" name="password"></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h2 class="font-style">Payment information</h2>
+                <table class="align-right">
+                    <tr>
+                        <td><label class="font-style" for="card-type">Card type:</label></td>
+                        <td><input type="text" name="card-type" id="card-type" list="choose-card-type"></td>
+                        <datalist class="font-style" id="choose-card-type">
+                            <option value="Visa">Visa</option>
+                            <option value="MasterCard">MasterCard</option>
+                        </datalist>
+                    </tr>
+                    <tr>
+                        <!-- https://stackoverflow.com/a/59757039 -->
+                        <td><label class="font-style" for="ccn">Credit Card Number:<abbr
+                                    title="This field is required">*</abbr></label></td>
+                        <td><input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"></td>
+                    </tr>
+                    <tr>
+                        <!-- https://stackoverflow.com/a/17017602 -->
+                        <td><label class="font-style" for="expiry">Expiration date:<abbr
+                                    title="This field is required">*</abbr></label></td>
+                        <td>
+                            <select name='expireMM' id='expireMM'>
+                                <option value=''>Month</option>
+                                <option value='01'>January</option>
+                                <option value='02'>February</option>
+                                <option value='03'>March</option>
+                                <option value='04'>April</option>
+                                <option value='05'>May</option>
+                                <option value='06'>June</option>
+                                <option value='07'>July</option>
+                                <option value='08'>August</option>
+                                <option value='09'>September</option>
+                                <option value='10'>October</option>
+                                <option value='11'>November</option>
+                                <option value='12'>December</option>
+                            </select>
+                            <select name='expireYY' id='expireYY'>
+                                <option value=''>Year</option>
+                                <option value='20'>2020</option>
+                                <option value='21'>2021</option>
+                                <option value='22'>2022</option>
+                                <option value='23'>2023</option>
+                                <option value='24'>2024</option>
+                            </select>
+                        </td>
+                        <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4" />
+                    </tr>
+                    <tr>
+                        <td><small class="font-style italic">formatted as mm/yy</small></td>
+                    </tr>
+                </table>
+                <div class="button font-style center-2">
+                    <button type="submit">Validate Payment</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
